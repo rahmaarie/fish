@@ -15,9 +15,9 @@ def app():
     # Input fields for the user to enter data
     st.header('Enter the features for prediction:')
     
-    length = st.number_input('Length of the fish (cm)', min_value=0.0)
-    weight = st.number_input('Weight of the fish (grams)', min_value=0.0)
-    w_l_ratio = st.number_input('Weight to Length Ratio', min_value=0.0)
+    length = st.slider('Length of the fish (cm)', min_value=0.0)
+    weight = st.slider('Weight of the fish (grams)', min_value=0.0)
+    w_l_ratio = st.slidert('Weight to Length Ratio', min_value=0.0)
     
     # When the user presses the predict button
     if st.button('Predict'):
